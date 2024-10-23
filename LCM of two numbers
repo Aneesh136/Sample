@@ -1,0 +1,19 @@
+#include<stdio.h>
+void main(){
+int a,b,maxi,st;
+printf("Enter input:");
+scanf("%d",&a);
+printf("Enter another input");
+scanf("%d",&b);
+maxi=a>b?a:b;
+st=maxi;
+while (1){
+    if(maxi%a==0 && maxi%b==0)
+        break;
+    else{
+        maxi=maxi+st;
+    }
+}
+printf("LCM of two numbers is %d",maxi);
+
+}
